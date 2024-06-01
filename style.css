@@ -1,27 +1,33 @@
-body{
-    padding: 100px 300p;
+body {
+    padding: 100px 300px;
 }
-h1
-{
-text-align: center;
-background-color: blueviolet;
-margin: 0;
-padding: 10px;
-color: wheat;
+
+h1 {
+    text-align: center;
+    background-color: blueviolet;
+    margin: 0;
+    padding: 10px;
+    color: wheat;
 }
-#textarea
-{
-width: 100%;
-border-radius: 30px;
-border-color: blueviolet;
+
+#textarea {
+    width: 80%; /* Reduced width */
+    border-radius: 20px; /* Smaller border radius */
+    border-color: blueviolet;
+    margin: 20px auto; /* Center the textarea */
+    display: block; /* Ensure the block display for centering */
+    position: relative; /* Added for relative positioning */
+    padding: 10px; /* Added padding for better look */
 }
-p
-{
-width:25px;
-text-align: center;
-background-color: blue;
-padding: 40px;
-font-size: 20px;
-font-weight: bold;
-margin: 0;
+
+p {
+    width: 150px; /* Increased width */
+    text-align: center;
+    background-color: blue;
+    padding: 20px; /* Reduced padding */
+    font-size: 16px; /* Reduced font size */
+    font-weight: bold;
+    margin: 20px auto; /* Added margin for spacing and centering */
+    border-radius: 10px; /* Added border-radius for better appearance */
+    color: white; /* Changed font color for better contrast */
 }
