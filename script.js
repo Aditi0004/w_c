@@ -1,34 +1,34 @@
-const input = document.querySelector("textarea");
-const wordCount = document.querySelector("[data-word-count]");
-const characterCount = document.querySelector("[data-character-count]");
-const sentenceCount = document.querySelector("[data-sentence-count]");
-const paragraphCount = document.querySelector("[data-paragraph-count]");
-
-input.addEventListener("input", function () {
-  if (input.value) {
-    // Count Words
-    const wordsArray = input.value.split(" ").filter((word) => word !== "");
-    wordCount.innerText = wordsArray.length;
-
-    // Count Characters
-    characterCount.innerText = input.value.length;
-
-    // Count Sentences
-    const sentenceArray = input.value.split(".");
-
-    sentenceCount.innerText = sentenceArray.length - 1;
-
-    // Count Paragraph
-    const paragraphArray = input.value
-      .split("\n")
-      .filter((p) => p.trim() !== "");
-
-    paragraphCount.innerText = paragraphArray.length;
-  } else {
-    wordCount.innerText =
-      characterCount.innerText =
-      sentenceCount.innerText =
-      paragraphCount.innerText =
-        0;
-  }
-});
+function getWordCount(str) {
+    let diff=str.trim().split(/\s+/);
+    console.log(diff);
+    if(diff==''){
+        return 0;
+    }
+    return diff.length;
+}
+function counter(str){
+    var alphabets=0;
+    var numbers=0;
+    var totalenteries=0;
+    for(var i=0;i<str.length;i++){
+        if(str[i]!=' ' && str[i]!='\n'){
+            totalenteries++;
+        }
+        if((str[i]>='a'&&str[i]<='z') || (str[i]>='A' && str[i]<='Z')){
+            alphabets++;
+        }
+        else if(str[i]>='0' && str[i]<='9'){
+            numbers++;
+        }
+    }
+    document.getElementById("enteries").value = totalenteries;
+    document.getElementById("numbers").value = numbers;
+    document.getElementById("alphabets").value = alphabets;
+}
+function wordCounter()
+{
+    let inputTxt = document.getElementById("inputBox");    
+    let words = getWordCount(inputTxt.value);
+    document.getElementById("words").value = words;
+    counter(inputTxt.value);
+}
