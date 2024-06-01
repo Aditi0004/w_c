@@ -1,33 +1,62 @@
-body {
-    padding: 100px 300px;
+body{
+    background-color: greenyellow;
 }
-
-h1 {
-    text-align: center;
-    background-color: blueviolet;
+*{
     margin: 0;
-    padding: 10px;
-    color: wheat;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-#textarea {
-    width: 80%; /* Reduced width */
-    border-radius: 20px; /* Smaller border radius */
-    border-color: blueviolet;
-    margin: 20px auto; /* Center the textarea */
-    display: block; /* Ensure the block display for centering */
-    position: relative; /* Added for relative positioning */
-    padding: 10px; /* Added padding for better look */
+.container{
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;
+    padding-top: 20px;
+    width: 100vw;
+    height: 100vh;    
+    background-color: aquamarine;
+    color: black;
 }
-
-p {
-    width: 150px; /* Increased width */
-    text-align: center;
-    background-color: blue;
-    padding: 20px; /* Reduced padding */
-    font-size: 16px; /* Reduced font size */
+.container textarea{
+    width: 70%;
+    height: 40%;    
+    outline: none;
+    border-radius: 10px;    
+    font-size: 20px;
+    font-family: Cambria;
+    max-width: 780px;    
+    resize:vertical;
+    margin-top: 20px; 
+    padding: 4px;
+    padding-top: 10px;  
+    transition: box-shadow .15s ease-in-out;
+}
+.container textarea:focus{    
+    box-shadow: 0px 0px 2px 4px rgb(150, 148, 138);
+}
+.outputBox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;        
+}
+.outputBox div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+.outputBox input{    
+    width:90px;
+    height: 40px;
+    margin-left: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(91, 86, 86);
+    border:none;
+    border-radius: 4px;
+    background-color: beige;
+    color: blue;
     font-weight: bold;
-    margin: 20px auto; /* Added margin for spacing and centering */
-    border-radius: 10px; /* Added border-radius for better appearance */
-    color: white; /* Changed font color for better contrast */
+    font-size: larger;
+}
+.outputBox label{
+    font-weight: bold;
+    font-size: larger;
 }
