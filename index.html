@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-
-    <h1>Word Counter</h1>
-    <div class="container">
-      <textarea placeholder="Enter your text here..."></textarea>
-      <div class="output-container">
-        <div class="output">
-          <p class="words">Words</p>
-          <span data-word-count>0</span>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <div class="container">        
+        <h1 class="heading">Words Counter</h1>        
+            <textarea name="inputBox" id="inputBox" cols="30" rows="10" 
+            oninput="wordCounter()" placeholder="Enter the text.."></textarea>
+            <div class="outputBox">
+                <div>
+                    <label for="words">Total Words</label>
+                    <input type="button" value="0" id="words">
+                </div>
+                <div>
+                    <label for="alphabets">Total Alphabets</label>
+                    <input type="button" value="0" id="alphabets">
+                </div>                
+                <div>
+                    <label for="numbers">Numbers</label>
+                    <input type="button" value="0" id="numbers">
+                </div> 
+                <div>
+                    <label for="enteries">Total Enteries</label>
+                    <input type="button" value="0" id="enteries">
+                </div>           
+            </div>
         </div>
-        <div class="output">
-          <p class="characters">Characters</p>
-          <span data-character-count>0</span>
-        </div>
-        <div class="output">
-          <p class="sentences">Sentences</p>
-          <span data-sentence-count>0</span>
-        </div>
-        <div class="output">
-          <p class="paragraphs">Paragraphs</p>
-          <span data-paragraph-count>0</span>
-        </div>
-      </div>
     </div>
 
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
