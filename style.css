@@ -1,58 +1,59 @@
-body {
+body 
+{
     font-family: Arial, sans-serif;
-    padding: 50px 20px; /* Adjusted padding to make it more responsive */
-    background-color: #f4f4f4; /* Light background color for better contrast */
+    padding: 50px 20px;
+    background-color: #f4f4f4; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
-
-.container {
+.container 
+{
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
-    max-width: 600px; /* Max width for better presentation on larger screens */
+    max-width: 600px;
 }
-
-.heading {
+.heading 
+{
     text-align: center;
     background-color: blueviolet;
     margin: 0;
     padding: 20px;
     color: wheat;
-    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    border-radius: 10px 10px 0 0; 
 }
-
-#inputBox {
+#inputBox 
+{
     width: 100%;
     border-radius: 20px;
     border: 2px solid blueviolet;
     padding: 15px;
     margin-top: 20px;
     font-size: 16px;
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    box-sizing: border-box; 
 }
-
-.outputBox {
+.outputBox 
+{
     margin-top: 20px;
 }
-
-.outputBox div {
+.outputBox div 
+{
     margin-bottom: 15px;
 }
-
-.outputBox label {
+.outputBox label 
+{
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: blueviolet;
 }
-
-.outputBox input[type="button"] {
+.outputBox input[type="button"] 
+{
     width: 100%;
     padding: 10px;
     font-size: 16px;
