@@ -1,62 +1,66 @@
-body{
-    background-color: greenyellow;
-}
-*{
+body {
+    font-family: Arial, sans-serif;
+    padding: 50px 20px; /* Adjusted padding to make it more responsive */
+    background-color: #f4f4f4; /* Light background color for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px; /* Max width for better presentation on larger screens */
+}
+
+.heading {
+    text-align: center;
+    background-color: blueviolet;
+    margin: 0;
+    padding: 20px;
+    color: wheat;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+#inputBox {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid blueviolet;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.outputBox {
+    margin-top: 20px;
+}
+
+.outputBox div {
+    margin-bottom: 15px;
+}
+
+.outputBox label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.outputBox input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    background-color: white;
+    color: blueviolet;
+    text-align: center;
+    cursor: default;
     box-sizing: border-box;
-}
-.container{
-    display: flex;    
-    flex-direction: column;    
-    align-items: center;
-    padding-top: 20px;
-    width: 100vw;
-    height: 100vh;    
-    background-color: aquamarine;
-    color: black;
-}
-.container textarea{
-    width: 70%;
-    height: 40%;    
-    outline: none;
-    border-radius: 10px;    
-    font-size: 20px;
-    font-family: Cambria;
-    max-width: 780px;    
-    resize:vertical;
-    margin-top: 20px; 
-    padding: 4px;
-    padding-top: 10px;  
-    transition: box-shadow .15s ease-in-out;
-}
-.container textarea:focus{    
-    box-shadow: 0px 0px 2px 4px rgb(150, 148, 138);
-}
-.outputBox{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;        
-}
-.outputBox div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px;
-}
-.outputBox input{    
-    width:90px;
-    height: 40px;
-    margin-left: 10px;
-    box-shadow: 1px 1px 1px 1px rgb(91, 86, 86);
-    border:none;
-    border-radius: 4px;
-    background-color: beige;
-    color: blue;
-    font-weight: bold;
-    font-size: larger;
-}
-.outputBox label{
-    font-weight: bold;
-    font-size: larger;
 }
